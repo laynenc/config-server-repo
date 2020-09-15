@@ -1,0 +1,13 @@
+---
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery:123456@discovery.lc:8761/eureka/
+    region: region-1
+  instance:
+    metadata-map:
+      zone: zone-1
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
