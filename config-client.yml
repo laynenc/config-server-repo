@@ -1,4 +1,7 @@
 ---
+info:
+  description: from remote file
+
 management:
   endpoints:
     web:
