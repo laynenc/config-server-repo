@@ -1,4 +1,4 @@
 ---
-mysq:
+mysql:
   username: layne
   password: 123456
